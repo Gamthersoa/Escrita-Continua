@@ -1,0 +1,25 @@
+.escrita {
+   display: inline-block;
+}
+
+
+h1 {
+  font-family: monospace;
+  border-right: 2.5px solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+    animation: 
+    escrevendo 3.5s steps(20, end),
+    cursor .5s infinite;
+}
+
+@keyframes escrevendo {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+  0% { border-color: transparent }
+  50% { border-color: orange }
+}
